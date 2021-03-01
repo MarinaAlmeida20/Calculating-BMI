@@ -23,6 +23,7 @@ for(var i = 0; i < pacientes.length; i++)
         console.log("Peso invalido");
         pesoEhValido = false;
         tdImc.textContent = "Peso invalido!"
+        paciente.style.backgroundColor = "lightcoral"
     }
 
     if(altura <= 0 || altura >= 3.00)
@@ -30,6 +31,7 @@ for(var i = 0; i < pacientes.length; i++)
         console.log("Altura invalida!");
         alturaEhValida = false;
         tdImc.textContent = "Altura invalida!"
+        paciente.style.backgroundColor = "lightcoral"
     }
 
     if(alturaEhValida && pesoEhValido)
